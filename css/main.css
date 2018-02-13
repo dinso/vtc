@@ -532,6 +532,25 @@ a:hover { text-decoration: underline }
     text-align: center;
     width: 40px;
 }
+.img-service{
+    background: #fff;
+    padding: 20px;
+    /*margin: 10pt 10pt;*/
+}
+.service-heading{
+    background-color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5pt;
+}
+.list-text{
+    color: #5b5d60;
+    background-color: #fff;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
 .service-title { color: #2098f5 }
 .fa-mbr { padding: 0 5px }
 .fa-mbr:hover { color: #31B0E0 }

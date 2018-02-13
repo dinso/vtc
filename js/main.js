@@ -1,12 +1,12 @@
 // Toggle Script
 (function() {
 	var container = document.getElementById( 'container' ),
-		trigger = container.querySelector( 'button.trigger' );
+	trigger = container.querySelector( 'button.trigger' );
 
 	function toggleContent() {
 		if( classie.has( container, 'container-open' ) ) {
 			classie.remove( container, 'container-open' );
-			classie.remove( trigger, 'trigger-active' );
+        	classie.remove( trigger, 'trigger-active' );
 			window.addEventListener( 'scroll', noscroll );
 		}
 		else {
@@ -29,22 +29,28 @@
 	trigger.addEventListener( 'click', toggleContent );
 
 	// For Demo purposes only (prevent jump on click)
-	[].slice.call( document.querySelectorAll('.content-wrapper a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+	[].slice.call( document.querySelectorAll('.content-wrapper a') ).forEach( function(el) 
+	{ 
+		el.onclick = function() 
+		{
+			return true;
+		}
+	} );
 })();
 
 // screen loader
 $(window).load(function() {
-    "use strict";
-    $('.screen-loader').fadeOut('slow');
+	"use strict";
+	$('.screen-loader').fadeOut('slow');
 });
 
 
 // preload
 $(document).ready(function() {
-    "use strict";
-    $('#preload').css({
-        display: 'table'
-    });
+	"use strict";
+	$('#preload').css({
+		display: 'table'
+	});
 });
 
 
@@ -53,25 +59,26 @@ $(window).load(preLoader);
 "use strict";
 
 function preLoader() {
-    setTimeout(function() {
-        $('#preload').delay(1000).fadeOut(1500);
-    });
+	setTimeout(function() {
+		$('#preload').delay(1000).fadeOut(1500);
+	});
 };
 
 // niceScroll
 $(document).ready(function() {
-    "use strict";
-    $("body").niceScroll({
-        cursorcolor: "#fff",
-        cursorwidth: "5px",
-        cursorborder: "1px solid #fff",
-        cursorborderradius: "0px",
-        zindex: "9999",
-        scrollspeed: "60",
-        mousescrollstep: "40"
-    });
+	"use strict";
+	$("body").niceScroll({
+		cursorcolor: "#fff",
+		cursorwidth: "5px",
+		cursorborder: "1px solid #fff",
+		cursorborderradius: "0px",
+		zindex: "9999",
+		scrollspeed: "60",
+		mousescrollstep: "40"
+	});
 });
 
 
 // niceScroll || scrollbars resize
 $("body").getNiceScroll().resize();
+

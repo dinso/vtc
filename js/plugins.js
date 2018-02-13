@@ -3,10 +3,10 @@
     var method;
     var noop = function () {};
     var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
+    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+    'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
     ];
     var length = methods.length;
     var console = (window.console = window.console || {});
@@ -32,14 +32,14 @@ $('.countdown').downCount({
 }, function () {
     alert('WOOT WOOT, done!');
 });
-     
+
 
 // -------------------------------------------------------------
 // Google Map Customization
 // -------------------------------------------------------------
 
 jQuery(function ($) {
-    
+
     'use strict';
 
     var map;
@@ -120,7 +120,30 @@ jQuery(function ($) {
 /**
  * MAILCHIMP
  */
-$('#mc-form').ajaxChimp({ 
-    url: 'http://doelit.us10.list-manage.com/subscribe/post?u=b02e4f21e264536eff4820875&amp;id=4d57faf2cb' 
+ $('#mc-form').ajaxChimp({ 
+    url: 'https://varshataxconsultants.us17.list-manage.com/subscribe/post?u=21bc6aa0502cf57f513bcce84&amp;id=f66e72637c' 
     /* Replace Your AjaxChimp Subscription Link */
 });
+
+/* <!-- Begin MailChimp Signup Form -->
+ <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+ <style type="text/css">
+ #mc_embed_signup{background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; width:100%;}
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. 
+    </style>
+    <div id="mc_embed_signup">
+    <form action="https://varshataxconsultants.us17.list-manage.com/subscribe/post?u=21bc6aa0502cf57f513bcce84&amp;id=f66e72637c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <label for="mce-EMAIL">Subscribe to our mailing list</label>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_21bc6aa0502cf57f513bcce84_f66e72637c" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->*/

@@ -1556,8 +1556,7 @@ GMaps.prototype.toImage = function(options) {
 };
 
 GMaps.staticMapURL = function(options){
-  
-  var parameters = [{key : 'AIzaSyDEkbSZA3etGGNhJPWSUuEp1ZJwsg46btY'}],
+  var parameters = [],
       data,
       static_root = 'http://maps.googleapis.com/maps/api/staticmap';
 
@@ -1614,7 +1613,7 @@ GMaps.staticMapURL = function(options){
     size = '630x300';
   }
   parameters.push('size=' + size);
- 
+  
   if (!options.zoom && options.zoom !== false) {
     options.zoom = 15;
   }
@@ -1624,7 +1623,7 @@ GMaps.staticMapURL = function(options){
   parameters.push('sensor=' + sensor);
 
   for (var param in options) {
-    if (options.hasOwnProperty(param==key)) {
+    if (options.hasOwnProperty(param)) {
       parameters.push(param + '=' + options[param]);
     }
   }
